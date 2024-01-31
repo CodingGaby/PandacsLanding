@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets"
+
 const navData = [
   {
     name: "About",
@@ -18,7 +20,7 @@ const navData = [
   <nav aria-label="Primary" class="relative flex flex-wrap items-center justify-between py-4 mx-auto lg:justify-between">
     <div class="">
       <a href="/" class="place-items-center grid" aria-label="Go Home" >
-        <img src="/isoLog-pdsWhite.webp" class="h-[45px] rounded-full" alt="GoHome">
+        <Image src="/isoLog-pdsWhite.webp" height="45" width="45" alt="GoHome">
       </a>
     </div>
     <div>

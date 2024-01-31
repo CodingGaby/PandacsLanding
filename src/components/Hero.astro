@@ -1,12 +1,31 @@
 ---
+import LinkButton from "./LinkButton.astro";
+
 ---
 
-<div class="flex flex-col justify-center items-center pt-[80px]">
-  <div class="flex w-4">
-    <h1 class="text-[4rem] font-bold leading-none text-center">Impulsando la  <span class="bg-gradient-to-r from-yellow-500 to-red-500 bg-clip-text text-transparent bg-400 bg-left"> Excelencia, Tecnológica</span> y la Sostenibilidad</h1>
-    <p class="text-white font-normal py-3 text-center">Transformamos la tecnología con innovación y responsabilidad ambiental. ¡Descubre cómo llevar tu empresa al siguiente nivel!</p>
+<div class="md:px-10 2xl:px-16 z-20 flex flex-col justify-center items-center pt-[100px] bg-[url('/bambooback.webp')] bg-cover">
+  <div class="w-[1300px] max-w-[1300px]">
+    <h1 
+      class="text-[4rem] font-bold leading-none text-center pt-20" 
+      >
+      Impulsando la 
+      <span class="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent bg-400 bg-left text-[4rem]">
+        Tecnología
+      </span> 
+      y la 
+      <span class="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent bg-400 bg-left"> 
+        Sostenibilidad
+      </span>
+    </h1>
   </div>
   <div>
-    
+    <p 
+      class="text-white font-normal py-8 text-center w-[700px] max-w-[800px]"
+    >
+      Transformamos la tecnología con innovación y responsabilidad ambiental. ¡Descubre cómo llevar tu empresa al siguiente nivel!
+    </p>    
+  </div>
+  <div class="pb-[40px]">
+    <LinkButton text="Contactanos" direction="/contact" title="¡Contacta con nosotros!"/>
   </div>
 </div>
