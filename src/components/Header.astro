@@ -16,8 +16,8 @@ const navData = [
   }
 ]
 ---
-<div class="fixed top-0 w-full px-5 md:px-10 2xl:px-16 border-b bg-[#13151a] border-gray-700 z-20">
-  <nav aria-label="Primary" class="relative flex flex-wrap items-center justify-between py-4 mx-auto lg:justify-between">
+<div class="fixed top-0 w-full px-5 border-b bg-[#f6f8fd] border-gray-700 z-20">
+  <nav aria-label="Primary" class="relative flex flex-wrap items-center justify-between py-3 mx-auto lg:justify-between">
     <div class="">
       <a href="/" class="place-items-center grid" aria-label="Go Home" >
         <Image src="/isoLog-pdsWhite.webp" height="45" width="45" alt="GoHome">
@@ -27,7 +27,7 @@ const navData = [
       <ul class="nav-links flex justify-end">
         {
           navData.map((item) => (
-            <li class="px-5 py-2 justify-center text-white cursor-pointer font-medium hover:underline transition-all duration-200 ease-in-out">
+            <li class="px-5 text-[#35591B] justify-center cursor-pointer font-[500] text-lg hover:underline transition-all duration-200 ease-in-out">
               <a href={item.path}>{item.name}</a>
             </li>
           ))

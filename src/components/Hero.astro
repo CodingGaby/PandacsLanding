@@ -1,31 +1,26 @@
 ---
+import { Image } from "astro:assets";
 import LinkButton from "./LinkButton.astro";
 
 ---
 
-<div class="md:px-10 2xl:px-16 z-20 flex flex-col justify-center items-center pt-[100px] bg-[url('/bambooback.webp')] bg-cover">
+<div class="md:px-10 2xl:px-16 z-20 flex flex-col justify-center items-center pt-[100px] bg-[#f2ebd5]">
   <div class="w-[1300px] max-w-[1300px]">
-    <h1 
-      class="text-[4rem] font-bold leading-none text-center pt-20" 
-      >
-      Impulsando la 
-      <span class="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent bg-400 bg-left text-[4rem]">
-        Tecnología
-      </span> 
-      y la 
-      <span class="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent bg-400 bg-left"> 
-        Sostenibilidad
-      </span>
-    </h1>
+    <h1 class="text-[4rem] text-[#35591B] font-bold leading-none text-center pt-20">Impulsando la Tecnología y la Sostenibilidad</h1>
   </div>
   <div>
-    <p 
-      class="text-white font-normal py-8 text-center w-[700px] max-w-[800px]"
-    >
-      Transformamos la tecnología con innovación y responsabilidad ambiental. ¡Descubre cómo llevar tu empresa al siguiente nivel!
-    </p>    
+    <p class="text-gray-500 font-normal py-8 text-center w-[700px] max-w-[800px]">Transformamos la tecnología con innovación y responsabilidad ambiental. ¡Descubre cómo llevar tu empresa al siguiente nivel!</p>
   </div>
   <div class="pb-[40px]">
     <LinkButton text="Contactanos" direction="/contact" title="¡Contacta con nosotros!"/>
   </div>
 </div>
+
+<div style={{ position: 'absolute', left: '-3%', top: '51%', transform: 'translateY(-95%)' }}>
+  <Image src="/bamborami.webp" alt="Descripción de la imagen" height="100" width="350" />
+</div>
+
+<div style={{ position: 'absolute', right: '-3%', top: '51%', transform: 'translateY(-95%) scaleX(-1)' }}>
+  <Image src="/bamborami.webp" alt="Descripción de la imagen" height="100" width="350" />
+</div>
+
