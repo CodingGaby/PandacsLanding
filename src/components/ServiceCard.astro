@@ -1,0 +1,25 @@
+---
+interface props {
+  title: string
+}
+
+const { title } = Astro.props as props
+---
+
+<a
+  href="#"
+  class="transition-all duration-1000 bg-white hover:bg-[#688c44] hover:shadow-xl m-2 p-4 relative z-40 group"
+>
+  <div
+    class="absolute bg-[#688c44]/50 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2"
+  >
+  </div>
+  <div class="py-2 px-9 relative">
+    <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white">
+      {title}
+    </h3>
+    <p class="mt-4 text-base text-gray-600 group-hover:text-white">
+      <slot/>
+    </p>
+  </div>
+</a>
