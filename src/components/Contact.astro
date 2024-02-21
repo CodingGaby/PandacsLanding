@@ -1,3 +1,6 @@
+---
+import ContactInput from "../components/ContactInput.astro"
+---
 <div class="flex min-h-[700px] items-center justify-start bg-white">
   <div class="mx-auto w-full max-w-lg">
     <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Contactanos</h1>
@@ -5,18 +8,9 @@
 
     <form class="mt-10">
       <div class="grid gap-6 sm:grid-cols-2">
-        <div class="relative z-0">
-          <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b-[3px] border-[#35591B] bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-[#688c44] focus:outline-none focus:ring-0" placeholder=" " />
-          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-[#35591B] duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-[#688c44]">Nombre</label>
-        </div>
-        <div class="relative z-0">
-          <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b-[3px] border-[#35591B] bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-[#688c44] focus:outline-none focus:ring-0" placeholder=" " />
-          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-[#35591B] duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-[#688c44]">Email</label>
-        </div>
-        <div class="relative z-0 col-span-2">
-          <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b-[3px] border-[#35591B] bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-[#688c44] focus:outline-none focus:ring-0" placeholder=" "></textarea>
-          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-[#35591B] duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-[#688c44]">Mensaje</label>
-        </div>
+        <ContactInput name="name" text="Nombre" isTextArea={false} />
+        <ContactInput name="email" text="Email" isTextArea={false} />
+        <ContactInput name="message" text="Mensaje" isTextArea={true} />
       </div>
       <button type="submit" class="mt-5  bg-[#688c44] px-5 py-2 text-white">Enviar mensaje</button>
     </form>
