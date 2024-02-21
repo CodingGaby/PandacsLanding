@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
+import BackBtn from "../components/BackBtn.astro"
 import { ViewTransitions } from "astro:transitions";
 interface Props {
 	title: string;
@@ -21,6 +22,7 @@ const { title } = Astro.props;
 		<ViewTransitions/>
 	</head>
 	<body class="flex flex-col justify-center items-center">
+		<BackBtn/>
 		<Header/>
 		<slot />
 		<Footer/>
@@ -43,7 +45,7 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #f6f8fd;
 		background-size: 224px;
-		scrollbar-width: auto;
+		scrollbar-width: none;
 		scrollbar-color: #688c44 white;
 		scroll-behavior: smooth;
 	}

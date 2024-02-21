@@ -1,14 +1,15 @@
 ---
 import ServiceCard from '../components/ServiceCard.astro'
+import LinkButton from './LinkButton.astro'
 ---
 
 <section class="bg-[#f2ebd5]">
-  <div class="py-10 sm:py-16 block lg:py-24 relative bg-opacity-50 z-40">
+  <div class="py-10 sm:py-16 block lg:py-24 relative bg-opacity-50">
     <div
       class="relative mx-auto h-full px-4 pb-20 md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8"
     >
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
-        <div class="max-w-xl mx-auto text-center">
+        <div class="max-w-2xl mx-auto text-center">
           <div class="inline-flex px-4 py-1.5 mx-auto rounded-full">
             <h2
               class="text-[4rem] text-[#35591B] font-bold leading-none text-center"
@@ -19,16 +20,30 @@ import ServiceCard from '../components/ServiceCard.astro'
           <p
             class="mt-4 text-base leading-relaxed text-gray-600 group-hover:text-white"
           >
-            En panda Code Solution ofrecemos una variedad de servicios de
+            En panda Code Solutions ofrecemos una variedad de servicios de
             desarrollo web para ayudar a nuestros clientes a tener exito en
             linea. Desde web's personalizadas, podemos ayudarlo a alcanzar sus
             objetivos en linea
           </p>
         </div>
         <div class="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-3 lg:mt-20">
-          <ServiceCard title="Apparels Industry">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit.
+          <ServiceCard title="Desarrollo de software">
+            En Panda Code Solutions creamos aplicaciones personalizadas para satisfacer las necesidades específicas de nuestros clientes. Nuestro equipo de desarrolladores altamente capacitados y experimentados trabajará con usted para comprendeer sus necesidades y crear una solucion única para su negocio.
+          </ServiceCard>
+          <ServiceCard title="Diseño y desarrollo de sitios web">
+            Nos encargamos de crear tu sitio web atractivo y efectivo que ayude a nuestros clientes a alcanzar sus objetivos en línea. Desde la planificación y el diseño hasta el desarrollo y la implementació, nuestro equipo puede ayudarlo a crear su sitio web que refleje su marca y atraiga a sus clientes.
+          </ServiceCard>
+          <ServiceCard title="Desarrollo de Ecommerce">
+            Creamos soluciones de comercio electrónico que ayudan a nuestros clientes a vender en línea. Desde la creacion de una tienda en línea hasta la integración de pagos en línea y la gestión de pedidos, nuestro equipo puede ayudarlo a crear una solución de comercio electrónico que funcione para su negocio. 
+          </ServiceCard>
+          <ServiceCard title="Diseño de UX">
+            Tomamos lugar en la creacion de experiencias de usuario excepcionales que ayudan a nuestros clientes a atraer y retener a sus clientes. Desde la investigación y el diseño de la interfaz de usuario hasta la creación de prototipos y pruebas de usuario, nuestro equipo puede ayudarlo a crear una experiencia de usuario única para su negocio.
+          </ServiceCard>
+          <ServiceCard title="Optimización de SEO">
+            Nos encargamos de la Optimización de motores de búsqueda (SEO) para ayudar a nuestros clientes a mejorar su visibilidad en línea. Desde la investigación de palabras clave hasta la Optimización de contenido y la creación de enlaces, podemos ayudarlo a mejorar su clasificación en los resultados de búsqueda.
+          </ServiceCard>
+          <ServiceCard title="Consultoría tecnológica">
+            En Panda Code Solutions, ofrecemos consultoria tecnológica para ayudar a nuestros clientes a tomar decisiones informadas sobre tecnológica. Desde la evaluación de tecnología hasta la planificación y la implementación de soluciones tecnológicas, nuestro equipo puede ayudarlo a encontrar la solución adecuada para su negocio
           </ServiceCard>
         </div>
       </div>
