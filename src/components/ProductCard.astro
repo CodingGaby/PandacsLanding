@@ -1,0 +1,34 @@
+---
+import Cart from "../icons/Cart.astro"
+
+interface Props {
+  product: string
+  desc: string
+  price: string
+  imgPath: string
+}
+
+const { product, desc, price, imgPath } = Astro.props
+---
+
+<article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+  <a href="#">
+    <div class="relative flex items-end overflow-hidden rounded-xl">
+      <img src={imgPath} alt="Product Photo" />
+    </div>
+
+    <div class="mt-1 p-2">
+      <h2 class="text-slate-700 font-semibold">{product}</h2>
+      <p class="mt-1 text-sm text-slate-400">{desc}</p>
+
+      <div class="mt-3 flex items-end justify-between">
+          <p class="text-lg font-bold text-[#688c44]">${price}</p>
+
+        <div class="flex items-center space-x-1.5 rounded-lg bg-[#688c44] px-3 py-1.5 text-white duration-100 hover:bg-[#4e6a33]">
+          <Cart/>
+          <button class="text-sm font-semibold">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>

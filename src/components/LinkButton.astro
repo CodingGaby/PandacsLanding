@@ -8,7 +8,7 @@ interface Props {
 const { text, direction, title } = Astro.props
 ---
 <a href={direction} title={title}
-	class="group relative overflow-hidden bg-[#688c44] focus:ring-4 focus:ring-[#47602f] inline-flex items-center px-7 py-2.5 text-white justify-center">
+	class="group relative overflow-hidden bg-[#688c44] focus:ring-4 focus:ring-[#47602f] inline-flex items-center px-7 py-2.5 text-white justify-center hover:transform hover:scale-105 duration-300">
 	<span class="z-40">{text}</span>
 	<svg class="z-40 ml-2 -mr-1 w-3 h-3 transition-all duration-300 group-hover:translate-x-1" fill="currentColor"
 		viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
