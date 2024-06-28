@@ -1,12 +1,15 @@
 ---
+import { Image } from 'astro:assets'
+
 interface Props {
   title: string
   img: string 
   altImg: string
   direction: string
+  isEager: 'eager' | 'lazy' | undefined | null;
 }
 
-const { title, img, direction, altImg } = Astro.props
+const { title, img, direction, altImg, isEager } = Astro.props
 var directionStyle
 
 if (direction === 'left') directionStyle = "w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12"
@@ -14,7 +17,7 @@ else directionStyle = "w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg
 ---
 <div class="flex flex-wrap items-center my-10 text-center">
   <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-      <img src={img} alt={altImg} class="no-drag inline-block rounded shadow-lg border border-merino-400 max-h-[400px] max-w-[420px]">
+      <Image src={img} alt={altImg} height="400" width="420" class="no-drag inline-block rounded shadow-lg border border-merino-400 max-h-[400px] max-w-[420px]" loading={isEager}>
   </div>
   <div class={directionStyle}>
       <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">

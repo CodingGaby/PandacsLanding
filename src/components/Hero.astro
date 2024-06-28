@@ -16,8 +16,8 @@ import LinkButton from "./LinkButton.astro";
   }
 </style>
 
-<div class="md:px-10 2xl:px-16 z-20 flex flex-col justify-center items-center pt-[100px] bg-[#f2ebd5]">
-  <div class="w-[1300px] max-w-[1300px]">
+<div class="sm:px-5 md:px-10 2xl:px-16 z-20 flex flex-col justify-center items-center pt-[100px] bg-[#f2ebd5]">
+  <div class="w-[800px] max-w-[800px] sm:w-[1300px] sm:max-w-[1300px]">
     <h1 class="text-[4rem] text-[#35591B] font-bold leading-none text-center pt-20">Impulsando la Tecnología y la Sostenibilidad</h1>
   </div>
   <div>
@@ -28,10 +28,10 @@ import LinkButton from "./LinkButton.astro";
   </div>
 </div>
 
-<div class="no-drag" style={{ position: 'absolute', left: '-2%', top: '49%', transform: 'translateY(-96%)' }}>
-  <Image src="/bamboorami.webp" alt="Bamboo" height="68" width="202" />
+<div class="no-drag hidden sm:block" style={{ position: 'absolute', left: '-2%', top: '49%', transform: 'translateY(-96%)' }}>
+  <Image src="/bamboorami.webp" alt="Bamboo" height="68" width="202" loading="eager"/>
 </div>
 
-<div class="no-drag" style={{ position: 'absolute', right: '0%', top: '49%', transform: 'translateY(-96%)' }}>
-  <Image src="/bamboorami.webp" alt="Bamboo" height="68" width="202" />
+<div class="no-drag hidden sm:block" style={{ position: 'absolute', right: '0%', top: '49%', transform: 'translateY(-96%)' }}>
+  <Image src="/bamboorami.webp" alt="Bamboo" height="68" width="202" loading="eager"/>
 </div>

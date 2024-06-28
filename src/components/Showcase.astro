@@ -1,0 +1,30 @@
+---
+interface Props {
+  imgPath: string
+  title: string
+}
+
+const { imgPath, title } = Astro.props
+---
+<style>
+  :root {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .no-drag {
+    pointer-events: none;
+  }
+</style>
+
+<div class="md:px-10 2xl:px-16 z-20 flex flex-col justify-center items-center pt-[50px] bg-[#f2ebd5]">
+  <div class="w-[800px] max-w-[800px] sm:w-[1300px] sm:max-w-[1300px]">
+    <h1 class="text-[4rem] text-[#35591B] font-bold leading-none text-center">{title}</h1>
+  </div>
+  <div class="flex items-center justify-center w-[800px] max-w-[800px] sm:w-[1300px] sm:max-w-[1300px] pb-[50px]">
+    <picture>
+      <img src={imgPath} alt="ShowCase">
+    </picture>
+</div>
